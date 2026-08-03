@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Roboto:wght@300;400;500;700&family=Caveat:wght@600&display=swap');
+
+:root {
+  --brand-green: #8cc63f;
+  --brand-green-hover: #7ab332;
+  --dark-bg: #0d131f;
+  --dark-bg-transparent: rgba(13, 19, 31, 0.85);
+  --text-white: #ffffff;
+  --text-gray: #b8c2d1;
+  --font-heading: 'Oswald', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+  --font-cursive: 'Caveat', cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px; /* Scales down rem units to zoom out slightly */
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--dark-bg);
+  color: var(--text-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* App Styles */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+      to right,
+      var(--dark-bg) 0%,
+      var(--dark-bg-transparent) 40%,
+      rgba(13, 19, 31, 0.4) 100%
+    ),
+    url('/hero_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  z-index: 10;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-text {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-subtext {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  color: var(--brand-green);
+  letter-spacing: 1px;
+}
+
+.logo-icon {
+  color: var(--brand-green);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-links li {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.nav-links li:hover {
+  color: var(--brand-green);
+}
+
+.nav-links li.active {
+  color: var(--text-white);
+  border-bottom: 2px solid var(--brand-green);
+  padding-bottom: 2px;
+}
+
+.nav-btn {
+  background-color: var(--brand-green);
+  color: var(--text-white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: var(--brand-green-hover);
+}
+
+/* Mobile Menu Icon */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hero Content */
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5%;
+  max-width: 700px;
+  z-index: 10;
+  padding-bottom: 2rem;
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title .highlight {
+  color: var(--brand-green);
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: var(--text-gray);
+  max-width: 90%;
+}
+
+.coach-info {
+  margin-bottom: 2rem;
+}
+
+.coach-name {
+  font-family: var(--font-cursive);
+  color: var(--brand-green);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.coach-credentials {
+  font-size: 0.9rem;
+  color: var(--text-white);
+  line-height: 1.4;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--brand-green);
+  color: var(--text-white);
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--brand-green-hover);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--text-white);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.8rem 1.8rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Stats Bar */
+.stats-bar-container {
+  width: 100%;
+  padding: 0 2% 2rem;
+  z-index: 20;
+}
+
+.stats-bar {
+  background-color: #08101a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  position: relative;
+}
+
+.stat-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 10%;
+  height: 80%;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.stat-icon {
+  color: var(--brand-green);
+  flex-shrink: 0;
+}
+
+.stat-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-value {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--text-white);
+  text-transform: uppercase;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--text-gray);
+  text-transform: uppercase;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 4rem;
+  }
+  .nav-links {
+    gap: 1rem;
+  }
+  .stats-bar {
+    padding: 1rem;
+  }
+  .stat-item {
+    gap: 0.5rem;
+  }
+  .stat-item:not(:last-child)::after {
+    right: -0.5rem;
+  }
+  .stat-value {
+    font-size: 0.8rem;
+  }
+  .stat-label {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links, .nav-btn {
+    display: none;
+  }
+  
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .stats-bar-container {
+    position: relative;
+    transform: none;
+    padding: 2rem 5%;
+    background-color: var(--dark-bg);
+  }
+
+  .stats-bar {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  .stat-item:not(:last-child)::after {
+    display: none;
+  }
+
+  .hero-content {
+    padding-bottom: 2rem;
+  }
+}
