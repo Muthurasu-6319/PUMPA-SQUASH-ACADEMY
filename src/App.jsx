@@ -9,12 +9,15 @@ import {
   Calendar,
   PlayCircle,
   ChevronDown,
-  Menu
+  Menu,
+  Award
 } from 'lucide-react';
 import './index.css';
+import logo from './assets/pumpa-logo.png';
 import CoachSection from './CoachSection';
 import ProgramsSection from './ProgramsSection';
 import WhyChooseSection from './WhyChooseSection';
+import TestimonialsSection from './TestimonialsSection';
 import ExperienceSection from './ExperienceSection';
 import Footer from './Footer';
 
@@ -25,13 +28,7 @@ function App() {
         {/* Navbar */}
         <nav className="navbar">
           <div className="logo-container">
-            <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M50 0C22.4 0 0 22.4 0 50C0 77.6 22.4 100 50 100C77.6 100 100 77.6 100 50C100 22.4 77.6 0 50 0ZM72 41L61 51.5L68 76H56L50 63L44 76H32L39 51.5L28 41H42.5L50 18L57.5 41H72Z" fill="#8cc63f"/>
-            </svg>
-            <div className="logo-text">
-              <span>PUMPA</span>
-              <span className="logo-subtext">SQUASH ACADEMY</span>
-            </div>
+            <img src={logo} alt="Pumpa Squash Academy Logo" className="logo-img" />
           </div>
 
           <ul className="nav-links">
@@ -55,15 +52,15 @@ function App() {
         {/* Hero Content */}
         <div className="hero-content">
           <h1 className="hero-title">
-            WHERE EVERY <br />
-            <span className="highlight">SQUASH JOURNEY</span> <br />
-            BEGINS
+            WHERE FUTURE <br />
+            <span className="highlight">CHAMPIONS</span> <br />
+            BEGIN
           </h1>
           
           <p className="hero-description">
-            Professional squash coaching for all ages and abilities.<br/>
-            From your child's first swing to elite performance,<br/>
-            we're here to inspire, develop and empower.
+            Develop Skills. Build Character. Achieve Greatness.<br/>
+            Professional squash coaching for juniors and adults.<br/>
+            Led by former Malaysian national player, former World No. 68, and WSF Level 3 Certified Coach Pushppa Devi, helping players build confidence, skills, and a lifelong love for squash.
           </p>
 
           <div className="coach-info">
@@ -81,7 +78,7 @@ function App() {
             </button>
             <button className="btn-secondary">
               <PlayCircle size={18} />
-              WATCH VIDEO
+              VIEW PROGRAMS
             </button>
           </div>
         </div>
@@ -90,10 +87,18 @@ function App() {
         <div className="stats-bar-container">
           <div className="stats-bar">
             <div className="stat-item">
+              <Users className="stat-icon" size={32} strokeWidth={1.5} />
+              <div className="stat-text">
+                <span className="stat-value">300+</span>
+                <span className="stat-label">PLAYERS COACHED</span>
+              </div>
+            </div>
+            
+            <div className="stat-item">
               <Trophy className="stat-icon" size={32} strokeWidth={1.5} />
               <div className="stat-text">
                 <span className="stat-value">20+ YEARS</span>
-                <span className="stat-label">OF EXPERIENCE</span>
+                <span className="stat-label">COACHING EXPERIENCE</span>
               </div>
             </div>
             
@@ -101,7 +106,7 @@ function App() {
               <Globe className="stat-icon" size={32} strokeWidth={1.5} />
               <div className="stat-text">
                 <span className="stat-value">FORMER</span>
-                <span className="stat-label">WORLD NO. 68</span>
+                <span className="stat-label">MALAYSIAN WORLD NO. 68</span>
               </div>
             </div>
             
@@ -109,31 +114,15 @@ function App() {
               <UserCheck className="stat-icon" size={32} strokeWidth={1.5} />
               <div className="stat-text">
                 <span className="stat-value">WSF LEVEL 3</span>
-                <span className="stat-label">CERTIFIED COACH</span>
+                <span className="stat-label">COACH</span>
               </div>
             </div>
             
             <div className="stat-item">
-              <Users className="stat-icon" size={32} strokeWidth={1.5} />
+              <Award className="stat-icon" size={32} strokeWidth={1.5} />
               <div className="stat-text">
-                <span className="stat-value">COACHING</span>
-                <span className="stat-label">ALL AGES & ABILITIES</span>
-              </div>
-            </div>
-            
-            <div className="stat-item">
-              <Heart className="stat-icon" size={32} strokeWidth={1.5} />
-              <div className="stat-text">
-                <span className="stat-value">PASSIONATE</span>
-                <span className="stat-label">ABOUT DEVELOPMENT</span>
-              </div>
-            </div>
-            
-            <div className="stat-item">
-              <TrendingUp className="stat-icon" size={32} strokeWidth={1.5} />
-              <div className="stat-text">
-                <span className="stat-value">PROVEN PATHWAY</span>
-                <span className="stat-label">FROM BEGINNER TO ELITE</span>
+                <span className="stat-value">AWARD-WINNING</span>
+                <span className="stat-label">ACADEMY</span>
               </div>
             </div>
           </div>
@@ -142,6 +131,7 @@ function App() {
       <CoachSection />
       <ProgramsSection />
       <WhyChooseSection />
+      <TestimonialsSection />
       <ExperienceSection />
       <Footer />
     </>

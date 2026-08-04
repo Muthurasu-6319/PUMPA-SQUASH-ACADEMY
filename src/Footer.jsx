@@ -6,7 +6,7 @@ import {
   MessageCircle 
 } from 'lucide-react';
 import './Footer.css';
-
+import logo from './assets/pumpa-logo.png';
 const Footer = () => {
   return (
     <footer className="footer-section">
@@ -15,15 +15,13 @@ const Footer = () => {
         {/* Left: Logo & Tagline */}
         <div className="footer-left">
           <div className="footer-logo">
-            <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M50 0C22.4 0 0 22.4 0 50C0 77.6 22.4 100 50 100C77.6 100 100 77.6 100 50C100 22.4 77.6 0 50 0ZM72 41L61 51.5L68 76H56L50 63L44 76H32L39 51.5L28 41H42.5L50 18L57.5 41H72Z" fill="#8cc63f"/>
-            </svg>
-            <div className="footer-logo-text">
-              <span>PUMPA</span>
-              <span className="sub">SQUASH ACADEMY</span>
-            </div>
+            <img src={logo} alt="Pumpa Squash Academy Logo" className="logo-img" />
           </div>
           <p className="footer-tagline">Start Here... Shine Everywhere</p>
+          <div className="accreditation-logos" style={{display: 'flex', gap: '10px', marginTop: '1rem'}}>
+            <span style={{fontSize: '0.8rem', padding: '5px 10px', background: 'rgba(255,255,255,0.1)', borderRadius: '4px'}}>WSF Level 3</span>
+            <span style={{fontSize: '0.8rem', padding: '5px 10px', background: 'rgba(255,255,255,0.1)', borderRadius: '4px'}}>Award Winning</span>
+          </div>
         </div>
 
         {/* Middle 1: Locations */}
@@ -33,29 +31,31 @@ const Footer = () => {
             <li>
               <MapPin className="footer-icon" size={20} />
               <div className="loc-text">
-                <strong>Subang Jaya (Main) Branch</strong><br/>
-                Subang Lake View Club (SLVC)<br/>
-                Jalan SS 12/1, 47500 Subang Jaya,<br/>
-                Selangor, Malaysia
+                <strong>Pumpa Squash Academy (Subang Branch)</strong><br/>
+                Jalan SS 12/1, Ss 12,<br/>
+                47500 Subang Jaya, Selangor, Malaysia
               </div>
             </li>
             <li>
               <MapPin className="footer-icon" size={20} />
               <div className="loc-text">
-                <strong>Cyberjaya Branch</strong><br/>
-                Pumpa Squash Academy (Cyberjaya Branch)<br/>
-                Jalan Kelab, 63000 Cyberjaya,<br/>
-                Selangor, Malaysia
-              </div>
-            </li>
-            <li>
-              <MapPin className="footer-icon" size={20} />
-              <div className="loc-text">
-                <strong>Putrajaya Branch</strong><br/>
-                Precinct 11, Sports Complex,
+                <strong>Pumpa Squash Academy (Cyberjaya Branch)</strong><br/>
+                Jalan Kelab, Cyberjaya,<br/>
+                63000 Cyberjaya, Selangor, Malaysia
               </div>
             </li>
           </ul>
+          <div className="footer-map" style={{marginTop: '1.5rem'}}>
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15936.570956557577!2d101.5919!3d3.0768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMDQnMzYuNSJOIDEwMcKwMzUnMzAuOCJF!5e0!3m2!1sen!2smy!4v1700000000000!5m2!1sen!2smy" 
+              width="100%" 
+              height="150" 
+              style={{border: 0, borderRadius: '8px'}} 
+              allowFullScreen="" 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
         </div>
 
         {/* Middle 2: Contact Us */}
@@ -71,6 +71,9 @@ const Footer = () => {
               <span>www.pumpasquashacademy.com</span>
             </li>
           </ul>
+          <button className="btn-primary" style={{marginTop: '1.5rem'}}>
+            BOOK A FREE TRIAL
+          </button>
         </div>
 
         {/* Right: Follow Us */}
@@ -90,6 +93,10 @@ const Footer = () => {
           </div>
         </div>
 
+      </div>
+      
+      <div className="footer-copyright" style={{textAlign: 'center', marginTop: '3rem', paddingTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.1)', fontSize: '0.85rem'}}>
+        &copy; {new Date().getFullYear()} Pumpa Squash Academy. All rights reserved.
       </div>
     </footer>
   );

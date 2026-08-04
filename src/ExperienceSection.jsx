@@ -10,7 +10,8 @@ import {
   Target,
   Heart,
   Calendar,
-  ChevronRight
+  ChevronRight,
+  Award
 } from 'lucide-react';
 import './ExperienceSection.css';
 
@@ -90,8 +91,14 @@ const ExperienceSection = () => {
           </div>
         </div>
 
-        {/* Stats Strip */}
         <div className="exp-stats-strip">
+          <div className="exp-stat-item">
+            <Users size={40} className="exp-stat-icon" />
+            <div className="exp-stat-text">
+              <span className="val">300+</span>
+              <span className="lab">PLAYERS<br/>COACHED</span>
+            </div>
+          </div>
           <div className="exp-stat-item">
             <Trophy size={40} className="exp-stat-icon" />
             <div className="exp-stat-text">
@@ -100,24 +107,24 @@ const ExperienceSection = () => {
             </div>
           </div>
           <div className="exp-stat-item">
-            <Users size={40} className="exp-stat-icon" />
+            <Globe size={40} className="exp-stat-icon" />
             <div className="exp-stat-text">
-              <span className="val">500+</span>
-              <span className="lab">PLAYERS<br/>DEVELOPED</span>
+              <span className="val">68</span>
+              <span className="lab">FORMER WORLD<br/>RANKING</span>
             </div>
           </div>
           <div className="exp-stat-item">
             <Medal size={40} className="exp-stat-icon" />
             <div className="exp-stat-text">
-              <span className="val">WSF LEVEL 3</span>
-              <span className="lab">CERTIFIED COACH</span>
+              <span className="val">LEVEL 3</span>
+              <span className="lab">WSF CERTIFIED<br/>COACH</span>
             </div>
           </div>
           <div className="exp-stat-item">
-            <Globe size={40} className="exp-stat-icon" />
+            <Award size={40} className="exp-stat-icon" />
             <div className="exp-stat-text">
-              <span className="val">WORLD NO. 68</span>
-              <span className="lab">FORMER<br/>PROFESSIONAL PLAYER</span>
+              <span className="val">AWARD</span>
+              <span className="lab">WINNING<br/>ACADEMY</span>
             </div>
           </div>
         </div>

@@ -50,7 +50,7 @@ ul {
       var(--dark-bg-transparent) 40%,
       rgba(13, 19, 31, 0.4) 100%
     ),
-    url('/hero_bg.png');
+    url('/coach_teaching.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -69,6 +69,12 @@ ul {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
 }
 
 .logo-text {

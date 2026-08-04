@@ -1,0 +1,140 @@
+.testimonials-section {
+  background-color: #08101a;
+  padding: 6rem 5%;
+  font-family: var(--font-body);
+}
+
+.test-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.test-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.test-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--brand-green);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.test-subtitle .line {
+  height: 2px;
+  width: 40px;
+  background-color: var(--brand-green);
+}
+
+.test-title {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.test-desc {
+  color: var(--text-gray);
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.test-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.test-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.test-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(140, 198, 63, 0.3);
+}
+
+.test-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.test-avatar {
+  width: 50px;
+  height: 50px;
+  background-color: var(--brand-green);
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.test-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.test-name {
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.test-source {
+  color: var(--text-gray);
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.fb-icon {
+  color: #1877f2;
+}
+
+.test-rating {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 2px;
+}
+
+.test-text {
+  color: #e2e8f0;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+@media (max-width: 1024px) {
+  .test-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .test-grid {
+    grid-template-columns: 1fr;
+  }
+  .test-title {
+    font-size: 2.5rem;
+  }
+}
