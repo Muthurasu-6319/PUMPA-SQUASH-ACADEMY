@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { 
   Trophy, 
   Users, 
@@ -10,6 +11,7 @@ import {
 import './WhyChooseSection.css';
 
 const WhyChooseSection = () => {
+  const navigate = useNavigate();
   const features = [
     {
       title: "PROVEN EXPERIENCE",
@@ -110,7 +112,7 @@ const WhyChooseSection = () => {
           </div>
 
           <div className="footer-right-content">
-            <button className="btn-primary-green">
+            <button className="btn-primary-green" onClick={() => navigate('/booking')}>
               <Calendar size={18} />
               BOOK A FREE TRIAL
             </button>

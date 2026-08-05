@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { 
   Play, 
   Trophy, 
@@ -16,6 +17,7 @@ import {
 import './ExperienceSection.css';
 
 const ExperienceSection = () => {
+  const navigate = useNavigate();
   const cards = [
     { title: "YOUNG BEGINNERS (4-7)", desc: "Building a strong foundation through play and fun.", icon: <Smile size={20} />, img: "/prog_mini.png" },
     { title: "FOOTWORK & MOVEMENT", desc: "Developing speed, agility and proper movement patterns.", icon: <Activity size={20} />, img: "/prog_junior.png" },
@@ -143,7 +145,7 @@ const ExperienceSection = () => {
             </div>
           </div>
           <div className="cta-right">
-            <button className="btn-primary-large">
+            <button className="btn-primary-large" onClick={() => navigate('/booking')}>
               <div className="btn-l">
                 <Calendar size={24} />
               </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { 
   Trophy, 
   Globe, 
@@ -22,6 +23,7 @@ import student6 from './assets/student6.png';
 const logo = "https://pumpa-4fcm.onrender.com/assets/mylogos-BV6WDaXh.png";
 
 const CoachSection = () => {
+  const navigate = useNavigate();
   return (
     <section className="coach-section">
       <div className="coach-container">
@@ -163,7 +165,7 @@ const CoachSection = () => {
               Passionate. Experienced. Dedicated to <span className="highlight-green">Your Success.</span>
             </div>
           </div>
-          <button className="banner-btn">
+          <button className="banner-btn" onClick={() => navigate('/booking')}>
             <div className="btn-text">
               <strong>BOOK A FREE TRIAL TODAY!</strong>
               <span>Take the first step in your squash journey with Pumpa.</span>

@@ -1,8 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { CheckCircle2, Calendar } from 'lucide-react';
 import './ProgramsSection.css';
 
 const ProgramsSection = () => {
+  const navigate = useNavigate();
   const programs = [
     {
       title: "MINI CHAMPIONS",
@@ -145,7 +147,7 @@ const ProgramsSection = () => {
           </div>
 
           <div className="footer-right">
-            <button className="btn-primary">
+            <button className="btn-primary" onClick={() => navigate('/booking')}>
               <Calendar size={18} />
               BOOK A FREE TRIAL
             </button>

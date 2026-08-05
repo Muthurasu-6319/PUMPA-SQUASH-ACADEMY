@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { 
   MapPin, 
   Mail, 
@@ -10,6 +11,7 @@ import './Footer.css';
 const logo = "https://pumpa-4fcm.onrender.com/assets/mylogos-BV6WDaXh.png";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <footer className="footer-section">
       <div className="footer-container">
@@ -77,7 +79,7 @@ const Footer = () => {
               <span>www.pumpasquashacademy.com</span>
             </li>
           </ul>
-          <button className="btn-primary" style={{marginTop: '1.5rem'}}>
+          <button className="btn-primary" style={{marginTop: '1.5rem'}} onClick={() => navigate('/booking')}>
             BOOK A FREE TRIAL
           </button>
         </div>
