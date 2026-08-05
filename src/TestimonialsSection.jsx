@@ -1,5 +1,5 @@
-import React from 'react';
-import { Star, MessageCircle } from 'lucide-react';
+import React, { useRef } from 'react';
+import { Star, MessageCircle, ChevronLeft, ChevronRight } from 'lucide-react';
 import './TestimonialsSection.css';
 
 const TestimonialsSection = () => {
@@ -21,8 +21,31 @@ const TestimonialsSection = () => {
       source: "Facebook Review",
       text: "The performance pathway really helped me prepare for my tournaments. Thank you Pumpa!",
       rating: 5
+    },
+    {
+      name: "Proud Mother",
+      source: "Facebook Review",
+      text: "Coach Pushpa's dedication is unmatched. My son's confidence on the court has grown tremendously since joining the academy.",
+      rating: 5
+    },
+    {
+      name: "Aspiring Pro",
+      source: "Facebook Review",
+      text: "Best squash academy in Malaysia! The environment is so positive and the training programs are top-notch.",
+      rating: 5
     }
   ];
+
+  const sliderRef = useRef(null);
+
+  const scroll = (direction) => {
+    if (sliderRef.current) {
+      const { clientWidth } = sliderRef.current;
+      // Scroll by approximately the width of one visible area
+      const scrollAmount = direction === 'left' ? -clientWidth : clientWidth;
+      sliderRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  };
 
   return (
     <section className="testimonials-section">
@@ -41,28 +64,40 @@ const TestimonialsSection = () => {
           </p>
         </div>
 
-        <div className="test-grid">
-          {reviews.map((review, idx) => (
-            <div className="test-card" key={idx}>
-              <div className="test-card-header">
-                <div className="test-avatar">
-                  {review.name.charAt(0)}
-                </div>
-                <div className="test-info">
-                  <h4 className="test-name">{review.name}</h4>
-                  <span className="test-source">
-                    <MessageCircle size={14} className="fb-icon" /> {review.source}
-                  </span>
+        <div className="slider-wrapper">
+          <button className="slider-btn prev" onClick={() => scroll('left')}>
+            <ChevronLeft size={24} />
+          </button>
+          
+          <div className="slider-container" ref={sliderRef}>
+            {reviews.map((review, idx) => (
+              <div className="slide-item" key={idx}>
+                <div className="test-card">
+                  <div className="test-card-header">
+                    <div className="test-avatar">
+                      {review.name.charAt(0)}
+                    </div>
+                    <div className="test-info">
+                      <h4 className="test-name">{review.name}</h4>
+                      <span className="test-source">
+                        <MessageCircle size={14} className="fb-icon" /> {review.source}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="test-rating">
+                    {[...Array(review.rating)].map((_, i) => (
+                      <Star key={i} size={16} fill="#eab308" color="#eab308" />
+                    ))}
+                  </div>
+                  <p className="test-text">"{review.text}"</p>
                 </div>
               </div>
-              <div className="test-rating">
-                {[...Array(review.rating)].map((_, i) => (
-                  <Star key={i} size={16} fill="#eab308" color="#eab308" />
-                ))}
-              </div>
-              <p className="test-text">"{review.text}"</p>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          <button className="slider-btn next" onClick={() => scroll('right')}>
+            <ChevronRight size={24} />
+          </button>
         </div>
       </div>
     </section>
