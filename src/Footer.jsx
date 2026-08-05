@@ -6,7 +6,9 @@ import {
   MessageCircle 
 } from 'lucide-react';
 import './Footer.css';
-import logo from './assets/pumpa-logo.png';
+
+const logo = "https://pumpa-4fcm.onrender.com/assets/mylogos-BV6WDaXh.png";
+
 const Footer = () => {
   return (
     <footer className="footer-section">
@@ -16,6 +18,10 @@ const Footer = () => {
         <div className="footer-left">
           <div className="footer-logo">
             <img src={logo} alt="Pumpa Squash Academy Logo" className="logo-img" />
+            <div className="footer-logo-text">
+              <span>PUMPA</span>
+              <span className="sub">SQUASH ACADEMY</span>
+            </div>
           </div>
           <p className="footer-tagline">Start Here... Shine Everywhere</p>
           <div className="accreditation-logos" style={{display: 'flex', gap: '10px', marginTop: '1rem'}}>

@@ -13,8 +13,9 @@ import {
   Award
 } from 'lucide-react';
 import './index.css';
-import logo from './assets/pumpa-logo.png';
 import CoachSection from './CoachSection';
+
+const logo = "https://pumpa-4fcm.onrender.com/assets/mylogos-BV6WDaXh.png";
 import ProgramsSection from './ProgramsSection';
 import WhyChooseSection from './WhyChooseSection';
 import TestimonialsSection from './TestimonialsSection';
@@ -29,6 +30,10 @@ function App() {
         <nav className="navbar">
           <div className="logo-container">
             <img src={logo} alt="Pumpa Squash Academy Logo" className="logo-img" />
+            <div className="logo-text">
+              PUMPA
+              <span className="logo-subtext">SQUASH ACADEMY</span>
+            </div>
           </div>
 
           <ul className="nav-links">

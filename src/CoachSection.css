@@ -254,18 +254,16 @@
   margin-top: 0.25rem;
 }
 
-/* Bottom Split Section */
-.coach-bottom-split {
-  display: flex;
-  gap: 1.5rem;
-}
-
+/* Achievements & Students Section */
 .achievements-card {
-  flex: 1.2;
   background-color: white;
   border-radius: 12px;
   padding: 2rem;
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.achievements-card.full-width {
+  width: 100%;
 }
 
 .achievements-grid {
@@ -299,19 +297,19 @@
   line-height: 1.4;
 }
 
-.gallery-grid {
-  flex: 1;
+.students-gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 100%;
 }
 
-.gallery-grid img {
+.students-gallery img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  border-radius: 12px;
   object-fit: cover;
-  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
 
@@ -409,8 +407,8 @@
   .strip-item:nth-child(2n) {
     border-right: none;
   }
-  .coach-bottom-split {
-    flex-direction: column;
+  .students-gallery {
+    grid-template-columns: repeat(2, 1fr);
   }
   .coach-footer-banner {
     flex-direction: column;
@@ -430,7 +428,7 @@
     justify-content: center;
     gap: 2rem;
   }
-  .gallery-grid {
+  .students-gallery {
     grid-template-columns: 1fr;
   }
 }

@@ -12,7 +12,14 @@ import {
   ChevronRight
 } from 'lucide-react';
 import './CoachSection.css';
-import logo from './assets/pumpa-logo.png';
+import student1 from './assets/student1.png';
+import student2 from './assets/student2.png';
+import student3 from './assets/student3.png';
+import student4 from './assets/student4.png';
+import student5 from './assets/student5.png';
+import student6 from './assets/student6.png';
+
+const logo = "https://pumpa-4fcm.onrender.com/assets/mylogos-BV6WDaXh.png";
 
 const CoachSection = () => {
   return (
@@ -26,6 +33,10 @@ const CoachSection = () => {
             <div className="img-overlay-box">
               <div className="logo-small">
                 <img src={logo} alt="Pumpa Squash Academy Logo" className="logo-img" style={{height: '24px'}} />
+                <div className="logo-text-small">
+                  PUMPA
+                  <span className="sub">SQUASH ACADEMY</span>
+                </div>
               </div>
               <div className="overlay-text">
                 WHERE EVERY<br/>
@@ -103,46 +114,45 @@ const CoachSection = () => {
         </div>
       </div>
 
-        {/* Bottom Split Section */}
-        <div className="coach-bottom-split">
-          {/* Left: Achievements & Highlights */}
-          <div className="achievements-card">
-            <div className="card-subtitle">
-              <span className="line"></span>
-              ACHIEVEMENTS & HIGHLIGHTS
-              <span className="line"></span>
+        {/* Achievements & Highlights (Full Width) */}
+        <div className="achievements-card full-width">
+          <div className="card-subtitle">
+            <span className="line"></span>
+            ACHIEVEMENTS & HIGHLIGHTS
+            <span className="line"></span>
+          </div>
+          <div className="achievements-grid">
+            <div className="achieve-item">
+              <div className="achieve-icon-circle"><Award size={24} /></div>
+              <span>Represented Malaysia<br/>in International<br/>Tournaments</span>
             </div>
-            <div className="achievements-grid">
-              <div className="achieve-item">
-                <div className="achieve-icon-circle"><Award size={24} /></div>
-                <span>Represented Malaysia<br/>in International<br/>Tournaments</span>
-              </div>
-              <div className="achieve-item">
-                <div className="achieve-icon-circle"><Globe size={24} /></div>
-                <span>Former World<br/>No. 68</span>
-              </div>
-              <div className="achieve-item">
-                <div className="achieve-icon-circle"><CheckCircle2 size={24} /></div>
-                <span>WSF Level 3<br/>Certified Coach</span>
-              </div>
-              <div className="achieve-item">
-                <div className="achieve-icon-circle"><Users size={24} /></div>
-                <span>Coached National &<br/>International<br/>Players</span>
-              </div>
-              <div className="achieve-item">
-                <div className="achieve-icon-circle"><Medal size={24} /></div>
-                <span>Award-Winning<br/>Coach & Educator</span>
-              </div>
+            <div className="achieve-item">
+              <div className="achieve-icon-circle"><Globe size={24} /></div>
+              <span>Former World<br/>No. 68</span>
+            </div>
+            <div className="achieve-item">
+              <div className="achieve-icon-circle"><CheckCircle2 size={24} /></div>
+              <span>WSF Level 3<br/>Certified Coach</span>
+            </div>
+            <div className="achieve-item">
+              <div className="achieve-icon-circle"><Users size={24} /></div>
+              <span>Coached National &<br/>International<br/>Players</span>
+            </div>
+            <div className="achieve-item">
+              <div className="achieve-icon-circle"><Medal size={24} /></div>
+              <span>Award-Winning<br/>Coach & Educator</span>
             </div>
           </div>
+        </div>
 
-          {/* Right: Gallery Grid */}
-          <div className="gallery-grid">
-            <img src="/gallery_img.png" alt="Gallery 1" />
-            <img src="/gallery_img.png" alt="Gallery 2" />
-            <img src="/gallery_img.png" alt="Gallery 3" />
-            <img src="/gallery_img.png" alt="Gallery 4" />
-          </div>
+        {/* Students Gallery */}
+        <div className="students-gallery">
+          <img src={student1} alt="Student 1" />
+          <img src={student2} alt="Student 2" />
+          <img src={student3} alt="Student 3" />
+          <img src={student4} alt="Student 4" />
+          <img src={student5} alt="Student 5" />
+          <img src={student6} alt="Student 6" />
         </div>
 
         {/* Footer Banner */}
