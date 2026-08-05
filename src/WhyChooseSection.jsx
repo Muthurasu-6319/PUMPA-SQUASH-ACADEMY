@@ -10,43 +10,50 @@ import {
 } from 'lucide-react';
 import './WhyChooseSection.css';
 
+import whyImg1 from './assets/Gallery/DSC_0145.JPG';
+import whyImg2 from './assets/Gallery/DSC_0150.JPG';
+import whyImg3 from './assets/Gallery/DSC_0156.JPG';
+import whyImg4 from './assets/Gallery/DSC_0241.JPG';
+import whyImg5 from './assets/Gallery/DSC_0244.JPG';
+import whyImg6 from './assets/Gallery/DSC_0443.JPG';
+
 const WhyChooseSection = () => {
   const navigate = useNavigate();
   const features = [
     {
       title: "PROVEN EXPERIENCE",
       desc: "Led by former Malaysian National Player, Former World No. 68 with 20+ years of playing and coaching experience.",
-      img: "/why_1.png",
+      img: whyImg1,
       icon: <Trophy size={28} />
     },
     {
       title: "EXPERT COACHING",
       desc: "WSF Level 3 Certified Coach with international exposure and a passion for player development at every level.",
-      img: "/why_2.png",
+      img: whyImg2,
       icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide-icon" width="28" height="28"><path d="M5 11l7-7 7 7"/><path d="M12 4v16"/><circle cx="12" cy="4" r="2"/></svg>
     },
     {
       title: "PERSONALISED ATTENTION",
       desc: "Small group coaching ensures every player receives the attention they need to improve and grow.",
-      img: "/why_3.png",
+      img: whyImg3,
       icon: <Users size={28} />
     },
     {
       title: "FUN & POSITIVE ENVIRONMENT",
       desc: "We create a safe, supportive and enjoyable space where players build confidence, friendships and a lifelong love for squash.",
-      img: "/why_4.png",
+      img: whyImg4,
       icon: <Heart size={28} />
     },
     {
       title: "DEVELOPMENT PATHWAY",
       desc: "Structured programs for every age and ability - from beginners to elite players with clear progression and goals.",
-      img: "/why_5.png",
+      img: whyImg5,
       icon: <TrendingUp size={28} />
     },
     {
       title: "TRUSTED BY FAMILIES",
       desc: "Strong relationships, proven results and hundreds of happy families who trust Pumpa with their squash journey.",
-      img: "/why_6.png",
+      img: whyImg6,
       icon: <Star size={28} />
     }
   ];

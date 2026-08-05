@@ -3,6 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import { CheckCircle2, Calendar } from 'lucide-react';
 import './ProgramsSection.css';
 
+import progImg1 from './assets/Gallery/DSC_0049.JPG';
+import progImg2 from './assets/Gallery/DSC_0051.JPG';
+import progImg3 from './assets/Gallery/DSC_0054.JPG';
+import progImg4 from './assets/Gallery/DSC_0070.JPG';
+import progImg5 from './assets/Gallery/DSC_0107.JPG';
+
 const ProgramsSection = () => {
   const navigate = useNavigate();
   const programs = [
@@ -12,7 +18,7 @@ const ProgramsSection = () => {
       desc: "A fun and engaging introduction to squash that builds coordination, movement, confidence and a lifelong love for the game.",
       bullets: ["Fun & Age-Appropriate Training", "Movement & Coordination", "Confidence & Social Skills"],
       color: "#eab308", // Yellow
-      img: "/prog_mini.png",
+      img: progImg1,
       iconSvg: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide-icon">
           <circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><circle cx="15" cy="7" r="4"/><path d="M12 21v-2a4 4 0 0 0-4-4H4a4 4 0 0 0-4 4v2"/>
@@ -25,7 +31,7 @@ const ProgramsSection = () => {
       desc: "Develop strong technical skills, game understanding and athletic ability in a supportive and motivating environment.",
       bullets: ["Technical Skills", "Tactics & Match Play", "Fitness & Agility"],
       color: "#3b82f6", // Blue
-      img: "/prog_junior.png",
+      img: progImg2,
       iconSvg: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide-icon">
           <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
@@ -38,7 +44,7 @@ const ProgramsSection = () => {
       desc: "Advanced training for tournament players and aspiring athletes aiming for higher levels of performance.",
       bullets: ["High Performance Training", "Match Strategy & Analysis", "Tournament Preparation"],
       color: "#22c55e", // Green
-      img: "/prog_performance.png",
+      img: progImg3,
       iconSvg: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide-icon">
           <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>
@@ -51,7 +57,7 @@ const ProgramsSection = () => {
       desc: "Programs for all levels - from beginners looking to get fit to advanced players wanting to improve and compete.",
       bullets: ["Beginner to Advanced", "Fitness & Skills Development", "Social & Competitive Play"],
       color: "#a855f7", // Purple
-      img: "/prog_adult.png",
+      img: progImg4,
       iconSvg: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide-icon">
           <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
@@ -64,7 +70,7 @@ const ProgramsSection = () => {
       desc: "One-to-one coaching tailored to your individual goals, needs and pace for faster improvement.",
       bullets: ["Personalised Training", "Focused Attention", "Flexible Scheduling"],
       color: "#f97316", // Orange
-      img: "/prog_private.png",
+      img: progImg5,
       iconSvg: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide-icon">
           <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><path d="M12 11l3 3-3 3-3-3 3-3z"/>

@@ -16,17 +16,31 @@ import {
 } from 'lucide-react';
 import './ExperienceSection.css';
 
+import expImg1 from './assets/Gallery/DSC_0447.JPG';
+import expImg2 from './assets/Gallery/DSC_0477.JPG';
+import expImg3 from './assets/Gallery/DSC_0491.JPG';
+import expImg4 from './assets/Gallery/DSC_0548.JPG';
+import expImg5 from './assets/Gallery/DSC_0551.JPG';
+import expImg6 from './assets/Gallery/DSC_0753.JPG';
+import expImg7 from './assets/Gallery/DSC_0843.JPG';
+import expImg8 from './assets/Gallery/DSC_0914.JPG';
+
+import thumb1 from './assets/Gallery/DSC_0917.JPG';
+import thumb2 from './assets/Gallery/DSC_0918.JPG';
+import thumb3 from './assets/Gallery/DSC_0927.JPG';
+import thumb4 from './assets/Gallery/DSC_0929.JPG';
+
 const ExperienceSection = () => {
   const navigate = useNavigate();
   const cards = [
-    { title: "YOUNG BEGINNERS (4-7)", desc: "Building a strong foundation through play and fun.", icon: <Smile size={20} />, img: "/prog_mini.png" },
-    { title: "FOOTWORK & MOVEMENT", desc: "Developing speed, agility and proper movement patterns.", icon: <Activity size={20} />, img: "/prog_junior.png" },
-    { title: "SKILLS DEVELOPMENT", desc: "Technique correction and personalised coaching for every player.", icon: <Target size={20} />, img: "/why_2.png" },
-    { title: "FUN LEARNING ENVIRONMENT", desc: "We make learning engaging, enjoyable and memorable.", icon: <Heart size={20} />, img: "/why_3.png" },
-    { title: "MATCH PLAY & GAME IQ", desc: "Improving tactical thinking and match performance.", icon: <Trophy size={20} />, img: "/why_5.png" },
-    { title: "TOURNAMENT COACHING", desc: "Preparing players for tournaments with focus and confidence.", icon: <Medal size={20} />, img: "/prog_performance.png" },
-    { title: "ADULT COACHING", desc: "Programs for all levels - from beginners to advanced players.", icon: <Users size={20} />, img: "/prog_adult.png" },
-    { title: "PUMPA COMMUNITY", desc: "A supportive community that grows together.", icon: <Users size={20} />, img: "/why_6.png" },
+    { title: "YOUNG BEGINNERS (4-7)", desc: "Building a strong foundation through play and fun.", icon: <Smile size={20} />, img: expImg1 },
+    { title: "FOOTWORK & MOVEMENT", desc: "Developing speed, agility and proper movement patterns.", icon: <Activity size={20} />, img: expImg2 },
+    { title: "SKILLS DEVELOPMENT", desc: "Technique correction and personalised coaching for every player.", icon: <Target size={20} />, img: expImg3 },
+    { title: "FUN LEARNING ENVIRONMENT", desc: "We make learning engaging, enjoyable and memorable.", icon: <Heart size={20} />, img: expImg4 },
+    { title: "MATCH PLAY & GAME IQ", desc: "Improving tactical thinking and match performance.", icon: <Trophy size={20} />, img: expImg5 },
+    { title: "TOURNAMENT COACHING", desc: "Preparing players for tournaments with focus and confidence.", icon: <Medal size={20} />, img: expImg6 },
+    { title: "ADULT COACHING", desc: "Programs for all levels - from beginners to advanced players.", icon: <Users size={20} />, img: expImg7 },
+    { title: "PUMPA COMMUNITY", desc: "A supportive community that grows together.", icon: <Users size={20} />, img: expImg8 },
   ];
 
   return (
@@ -80,10 +94,10 @@ const ExperienceSection = () => {
           </div>
           <div className="video-strip-right">
             <div className="video-thumbnails">
-              <img src="/why_2.png" alt="Thumb 1" />
-              <img src="/why_3.png" alt="Thumb 2" />
-              <img src="/why_6.png" alt="Thumb 3" />
-              <img src="/prog_mini.png" alt="Thumb 4" />
+              <img src={thumb1} alt="Thumb 1" />
+              <img src={thumb2} alt="Thumb 2" />
+              <img src={thumb3} alt="Thumb 3" />
+              <img src={thumb4} alt="Thumb 4" />
             </div>
             <div className="play-button-overlay">
               <div className="play-circle">
