@@ -127,7 +127,7 @@ ul {
   padding-bottom: 2px;
 }
 
-.mobile-only-btn {
+.nav-links li.mobile-only-btn {
   display: none;
 }
 
