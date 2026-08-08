@@ -24,7 +24,7 @@ const BookingPage = () => {
       message += `*Additional Message:* ${data.message}\n`;
     }
 
-    const whatsappUrl = `https://wa.me/8124996319?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/60123178564?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 

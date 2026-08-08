@@ -1,110 +1,89 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { 
-  MapPin, 
-  Mail, 
-  Globe, 
-  MessageCircle 
-} from 'lucide-react';
+import { MapPin, Phone, Mail, Globe } from 'lucide-react';
 import './Footer.css';
 
-const logo = "https://pumpa-4fcm.onrender.com/assets/mylogos-BV6WDaXh.png";
-
 const Footer = () => {
-  const navigate = useNavigate();
   return (
-    <footer className="footer-section">
-      <div className="footer-container">
-        
-        {/* Left: Logo & Tagline */}
-        <div className="footer-left">
+    <footer className="footer">
+      <div className="footer-top">
+        <div className="footer-brand">
           <div className="footer-logo">
-            <img src={logo} alt="Pumpa Squash Academy Logo" className="logo-img" />
-            <div className="footer-logo-text">
-              <span>PUMPA</span>
-              <span className="sub">SQUASH ACADEMY</span>
-            </div>
+            <img src="/logo.png" alt="Pumpa Squash Academy" className="footer-logo-img" onError={e => { e.target.style.display = 'none'; }} />
+            <span className="footer-logo-text">PUMPA<br /><span className="footer-logo-sub">SQUASH ACADEMY</span></span>
           </div>
-          <p className="footer-tagline">Start Here... Shine Everywhere</p>
-          <div className="accreditation-logos" style={{display: 'flex', gap: '10px', marginTop: '1rem'}}>
-            <span style={{fontSize: '0.8rem', padding: '5px 10px', background: 'rgba(255,255,255,0.1)', borderRadius: '4px'}}>WSF Level 3</span>
-            <span style={{fontSize: '0.8rem', padding: '5px 10px', background: 'rgba(255,255,255,0.1)', borderRadius: '4px'}}>Award Winning</span>
+          <p className="footer-tagline">
+            Developing champions on and off the court. Professional squash coaching for all ages and skill levels.
+          </p>
+          <div className="footer-social">
+            <a href="https://www.facebook.com/pumpasquashacademy" target="_blank" rel="noopener noreferrer" className="footer-social-btn facebook" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/pumpasquashacademy?igsh=MWE2cXMxdXJ6NjR3Yg==" target="_blank" rel="noopener noreferrer" className="footer-social-btn instagram" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/60123178564" target="_blank" rel="noopener noreferrer" className="footer-social-btn whatsapp" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+              </svg>
+            </a>
           </div>
         </div>
 
-        {/* Middle 1: Locations */}
-        <div className="footer-locations">
-          <h4 className="footer-title">OUR LOCATIONS</h4>
-          <ul className="location-list">
+        <div className="footer-links-col">
+          <h4 className="footer-col-title">Quick Links</h4>
+          <ul className="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/programs">Programs</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/booking">Book Free Trial</a></li>
+          </ul>
+        </div>
+
+        <div className="footer-links-col">
+          <h4 className="footer-col-title">Programs</h4>
+          <ul className="footer-links">
+            <li><a href="/programs">Junior Development</a></li>
+            <li><a href="/programs">Advanced Training</a></li>
+            <li><a href="/programs">Adult Coaching</a></li>
+            <li><a href="/programs">Competitive Prep</a></li>
+            <li><a href="/programs">Holiday Camps</a></li>
+          </ul>
+        </div>
+
+        <div className="footer-contact-col">
+          <h4 className="footer-col-title">Contact Us</h4>
+          <ul className="footer-contact-list">
             <li>
-              <MapPin className="footer-icon" size={20} />
-              <div className="loc-text">
-                <strong>Pumpa Squash Academy (Subang Branch)</strong><br/>
-                Jalan SS 12/1, Ss 12,<br/>
-                47500 Subang Jaya, Selangor, Malaysia
-              </div>
+              <MapPin size={15} className="footer-contact-icon" />
+              <span>Selangor &amp; Kuala Lumpur, Malaysia</span>
             </li>
             <li>
-              <MapPin className="footer-icon" size={20} />
-              <div className="loc-text">
-                <strong>Pumpa Squash Academy (Cyberjaya Branch)</strong><br/>
-                Jalan Kelab, Cyberjaya,<br/>
-                63000 Cyberjaya, Selangor, Malaysia
-              </div>
+              <Phone size={15} className="footer-contact-icon" />
+              <a href="https://wa.me/60123178564" target="_blank" rel="noopener noreferrer">+60 12-317 8564</a>
+            </li>
+            <li>
+              <Mail size={15} className="footer-contact-icon" />
+              <a href="mailto:info@pumpasquashacademy.com">info@pumpasquashacademy.com</a>
+            </li>
+            <li>
+              <Globe size={15} className="footer-contact-icon" />
+              <a href="https://www.pumpasquashacademy.com" target="_blank" rel="noopener noreferrer">www.pumpasquashacademy.com</a>
             </li>
           </ul>
-          <div className="footer-map" style={{marginTop: '1.5rem'}}>
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15936.570956557577!2d101.5919!3d3.0768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMDQnMzYuNSJOIDEwMcKwMzUnMzAuOCJF!5e0!3m2!1sen!2smy!4v1700000000000!5m2!1sen!2smy" 
-              width="100%" 
-              height="150" 
-              style={{border: 0, borderRadius: '8px'}} 
-              allowFullScreen="" 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
         </div>
-
-        {/* Middle 2: Contact Us */}
-        <div className="footer-contact">
-          <h4 className="footer-title">CONTACT US</h4>
-          <ul className="contact-list">
-            <li>
-              <Mail className="footer-icon" size={20} />
-              <span>info@pumpasquashacademy.com</span>
-            </li>
-            <li>
-              <Globe className="footer-icon" size={20} />
-              <span>www.pumpasquashacademy.com</span>
-            </li>
-          </ul>
-          <button className="btn-primary" style={{marginTop: '1.5rem'}} onClick={() => navigate('/booking')}>
-            BOOK A FREE TRIAL
-          </button>
-        </div>
-
-        {/* Right: Follow Us */}
-        <div className="footer-social">
-          <h4 className="footer-title">FOLLOW US</h4>
-          <div className="social-icons">
-            <a href="#" className="social-icon fb">
-              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill="white"/></svg>
-            </a>
-            <a href="#" className="social-icon ig">
-              <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24" color="white"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </a>
-            <a href="#" className="social-icon yt">
-              <svg width="20" height="20" fill="white" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.07 0 12 0 12s0 3.93.501 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.377.55 9.377.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-            </a>
-            <a href="#" className="social-icon wa"><MessageCircle size={20} color="white" /></a>
-          </div>
-        </div>
-
       </div>
-      
-      <div className="footer-copyright" style={{textAlign: 'center', marginTop: '3rem', paddingTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.1)', fontSize: '0.85rem'}}>
-        &copy; {new Date().getFullYear()} Pumpa Squash Academy. All rights reserved.
+
+      <div className="footer-bottom">
+        <p className="footer-copy">© {new Date().getFullYear()} Pumpa Squash Academy. All rights reserved.</p>
+        <p className="footer-credit">Empowering champions through world-class squash coaching.</p>
       </div>
     </footer>
   );

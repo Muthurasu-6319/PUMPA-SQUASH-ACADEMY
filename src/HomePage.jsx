@@ -8,7 +8,6 @@ import {
   TrendingUp,
   Calendar,
   PlayCircle,
-  ChevronDown,
   Menu,
   Award
 } from 'lucide-react';
@@ -42,10 +41,10 @@ function HomePage() {
 
           <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
             <li className="active">HOME</li>
-            <li>ABOUT US</li>
-            <li>PROGRAMS <ChevronDown size={16} /></li>
-            <li>GALLERY</li>
-            <li>CONTACT US</li>
+            <li onClick={() => navigate('/about')} style={{ cursor: 'pointer' }}>ABOUT US</li>
+            <li onClick={() => navigate('/programs')} style={{ cursor: 'pointer' }}>PROGRAMS</li>
+            <li onClick={() => navigate('/gallery')} style={{ cursor: 'pointer' }}>GALLERY</li>
+            <li onClick={() => navigate('/contact')} style={{ cursor: 'pointer' }}>CONTACT US</li>
             <li className="mobile-only-btn">
               <button className="btn-primary" onClick={() => navigate('/booking')} style={{ width: '100%', justifyContent: 'center' }}>
                 <Calendar size={18} />
