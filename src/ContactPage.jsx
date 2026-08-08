@@ -72,7 +72,7 @@ export default function ContactPage() {
     messageText += `*Subject:* ${form.subject}\n`;
     messageText += `*Message:* ${form.message}\n`;
 
-    const whatsappUrl = `https://wa.me/60123178564?text=${encodeURIComponent(messageText)}`;
+    const whatsappUrl = `https://wa.me/601111989375?text=${encodeURIComponent(messageText)}`;
 
     setTimeout(() => {
       setLoading(false);
@@ -258,11 +258,11 @@ export default function ContactPage() {
 
       {/* ── QUICK CONTACT STRIP ── */}
       <section className={`quick-contact-strip ${infoIn ? 'animate-in' : ''}`} ref={infoRef}>
-        <a href="https://wa.me/60123178564" target="_blank" rel="noopener noreferrer" className="qc-item" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <a href="https://wa.me/601111989375" target="_blank" rel="noopener noreferrer" className="qc-item" style={{ textDecoration: 'none', color: 'inherit' }}>
           <div className="qc-icon wa"><MessageCircle size={26} /></div>
           <div>
             <h4 className="qc-title">WHATSAPP US</h4>
-            <p className="qc-desc">+60 12-317 8564 (Click to chat)</p>
+            <p className="qc-desc">+60 11-1198 9375 (Click to chat)</p>
           </div>
         </a>
         <div className="qc-divider" />
@@ -291,7 +291,7 @@ export default function ContactPage() {
             <a href="https://www.instagram.com/pumpasquashacademy?igsh=MWE2cXMxdXJ6NjR3Yg==" target="_blank" rel="noopener noreferrer" className="social-icon ig" aria-label="Instagram">
               <svg width="18" height="18" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
             </a>
-            <a href="https://wa.me/60123178564" target="_blank" rel="noopener noreferrer" className="social-icon wa" aria-label="WhatsApp">
+            <a href="https://wa.me/601111989375" target="_blank" rel="noopener noreferrer" className="social-icon wa" aria-label="WhatsApp">
               <MessageCircle size={18} color="white" />
             </a>
           </div>

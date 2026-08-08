@@ -45,7 +45,7 @@
     radial-gradient(circle at 15% 30%, rgba(140, 198, 63, 0.22) 0%, transparent 45%),
     radial-gradient(circle at 85% 70%, rgba(37, 211, 102, 0.15) 0%, transparent 50%),
     linear-gradient(to right, rgba(11, 17, 30, 0.95) 0%, rgba(11, 17, 30, 0.75) 50%, rgba(11, 17, 30, 0.5) 100%),
-    url('/hero_bg.png');
+    url('/about_banner.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

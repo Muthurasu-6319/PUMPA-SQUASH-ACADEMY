@@ -50,7 +50,7 @@ ul {
       var(--dark-bg-transparent) 40%,
       rgba(13, 19, 31, 0.4) 100%
     ),
-    url('/coach_teaching.png');
+    url('/home_banner.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

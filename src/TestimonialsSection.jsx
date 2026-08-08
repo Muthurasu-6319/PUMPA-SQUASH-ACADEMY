@@ -13,7 +13,7 @@ const TestimonialsSection = () => {
     {
       name: "Squash Enthusiast",
       source: "Facebook Review",
-      text: "Great facility and excellent coaching from Pushpa Devi. Highly recommend for players of all levels.",
+      text: "Great facility and excellent coaching from Pushppa Devi. Highly recommend for players of all levels.",
       rating: 5
     },
     {
@@ -25,7 +25,7 @@ const TestimonialsSection = () => {
     {
       name: "Proud Mother",
       source: "Facebook Review",
-      text: "Coach Pushpa's dedication is unmatched. My son's confidence on the court has grown tremendously since joining the academy.",
+      text: "Coach Pushppa's dedication is unmatched. My son's confidence on the court has grown tremendously since joining the academy.",
       rating: 5
     },
     {
@@ -68,7 +68,7 @@ const TestimonialsSection = () => {
           <button className="slider-btn prev" onClick={() => scroll('left')}>
             <ChevronLeft size={24} />
           </button>
-          
+
           <div className="slider-container" ref={sliderRef}>
             {reviews.map((review, idx) => (
               <div className="slide-item" key={idx}>

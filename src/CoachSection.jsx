@@ -1,10 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { 
-  Trophy, 
-  Globe, 
-  Users, 
-  Award, 
+import {
+  Trophy,
+  Globe,
+  Users,
+  Award,
   Star,
   Quote,
   Medal,
@@ -31,18 +31,18 @@ const CoachSection = () => {
         <div className="coach-top-split">
           {/* Left: Teaching Image */}
           <div className="coach-img-left">
-            <img src="/pushppa-picture.png" alt="Coach Pushpa" className="img-fluid" />
+            <img src="/pushppa-picture.png" alt="Coach Pushppa" className="img-fluid" />
             <div className="img-overlay-box">
               <div className="logo-small">
-                <img src={logo} alt="Pumpa Squash Academy Logo" className="logo-img" style={{height: '24px'}} />
+                <img src={logo} alt="Pumpa Squash Academy Logo" className="logo-img" style={{ height: '24px' }} />
                 <div className="logo-text-small">
                   PUMPA
                   <span className="sub">SQUASH ACADEMY</span>
                 </div>
               </div>
               <div className="overlay-text">
-                WHERE EVERY<br/>
-                <span className="highlight-green">SQUASH JOURNEY</span><br/>
+                WHERE EVERY<br />
+                <span className="highlight-green">SQUASH JOURNEY</span><br />
                 BEGINS
               </div>
             </div>
@@ -57,9 +57,9 @@ const CoachSection = () => {
                   MEET YOUR COACH
                   <span className="line"></span>
                 </div>
-                
+
                 <h2 className="coach-title">
-                  PUSHPA DEVI<br/>
+                  PUSHPPA DEVI<br />
                   <span className="highlight-green">PARAMASEWA</span>
                 </h2>
 
@@ -77,44 +77,44 @@ const CoachSection = () => {
                     I believe every player has potential. My mission is to create a positive and inspiring environment where athletes of all ages can grow in confidence, develop strong foundations and achieve their personal best—on and off the court.
                   </p>
                   <Quote className="quote-icon end" size={24} />
-                  <div className="quote-signature">Pushpa Devi</div>
+                  <div className="quote-signature">Pushppa Devi</div>
                 </div>
               </div>
             </div>
-          
-          {/* Stats Strip under top section (Right side only) */}
-          <div className="coach-stats-strip">
-            <div className="strip-item">
-              <Users size={32} className="strip-icon" />
-              <div className="strip-text">
-                <span className="strip-value">300+</span>
-                <span className="strip-label">PLAYERS<br/>COACHED</span>
+
+            {/* Stats Strip under top section (Right side only) */}
+            <div className="coach-stats-strip">
+              <div className="strip-item">
+                <Users size={32} className="strip-icon" />
+                <div className="strip-text">
+                  <span className="strip-value">300+</span>
+                  <span className="strip-label">PLAYERS<br />COACHED</span>
+                </div>
               </div>
-            </div>
-            <div className="strip-item">
-              <Trophy size={32} className="strip-icon" />
-              <div className="strip-text">
-                <span className="strip-value">20+</span>
-                <span className="strip-label">YEARS<br/>EXPERIENCE</span>
+              <div className="strip-item">
+                <Trophy size={32} className="strip-icon" />
+                <div className="strip-text">
+                  <span className="strip-value">20+</span>
+                  <span className="strip-label">YEARS<br />EXPERIENCE</span>
+                </div>
               </div>
-            </div>
-            <div className="strip-item">
-              <Globe size={32} className="strip-icon" />
-              <div className="strip-text">
-                <span className="strip-value">68</span>
-                <span className="strip-label">FORMER WORLD<br/>RANKING</span>
+              <div className="strip-item">
+                <Globe size={32} className="strip-icon" />
+                <div className="strip-text">
+                  <span className="strip-value">68</span>
+                  <span className="strip-label">FORMER WORLD<br />RANKING</span>
+                </div>
               </div>
-            </div>
-            <div className="strip-item">
-              <Award size={32} className="strip-icon" />
-              <div className="strip-text">
-                <span className="strip-value">AWARD</span>
-                <span className="strip-label">WINNING<br/>ACADEMY</span>
+              <div className="strip-item">
+                <Award size={32} className="strip-icon" />
+                <div className="strip-text">
+                  <span className="strip-value">AWARD</span>
+                  <span className="strip-label">WINNING<br />ACADEMY</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
         {/* Achievements & Highlights (Full Width) */}
         <div className="achievements-card full-width">
@@ -126,23 +126,23 @@ const CoachSection = () => {
           <div className="achievements-grid">
             <div className="achieve-item">
               <div className="achieve-icon-circle"><Award size={24} /></div>
-              <span>Represented Malaysia<br/>in International<br/>Tournaments</span>
+              <span>Represented Malaysia<br />in International<br />Tournaments</span>
             </div>
             <div className="achieve-item">
               <div className="achieve-icon-circle"><Globe size={24} /></div>
-              <span>Former World<br/>No. 68</span>
+              <span>Former World<br />No. 68</span>
             </div>
             <div className="achieve-item">
               <div className="achieve-icon-circle"><CheckCircle2 size={24} /></div>
-              <span>WSF Level 3<br/>Certified Coach</span>
+              <span>WSF Level 3<br />Certified Coach</span>
             </div>
             <div className="achieve-item">
               <div className="achieve-icon-circle"><Users size={24} /></div>
-              <span>Coached National &<br/>International<br/>Players</span>
+              <span>Coached National &<br />International<br />Players</span>
             </div>
             <div className="achieve-item">
               <div className="achieve-icon-circle"><Medal size={24} /></div>
-              <span>Award-Winning<br/>Coach & Educator</span>
+              <span>Award-Winning<br />Coach & Educator</span>
             </div>
           </div>
         </div>
