@@ -904,12 +904,96 @@
 }
 @media (max-width: 768px) {
   .pillars-grid { grid-template-columns: 1fr; }
-  .coach-card-row { grid-template-columns: 1fr; }
+  
+  .coaches-section {
+    padding: 3.5rem 4%;
+  }
+
+  .coach-card-row {
+    grid-template-columns: 1fr;
+    padding: 1.5rem 1.2rem;
+    gap: 1.5rem;
+    border-radius: 16px;
+    margin-bottom: 2.5rem;
+  }
+  .coach-card-row.reverse {
+    grid-template-columns: 1fr;
+  }
   .coach-card-row.reverse .coach-photo-wrap { order: 1; }
   .coach-card-row.reverse .coach-info-block { order: 2; }
-  .coach-photo-wrap { margin: 0 auto; }
+
+  .coach-photo-wrap {
+    width: 170px;
+    margin: 0 auto;
+  }
+  .coach-photo-ring {
+    width: 170px;
+    height: 170px;
+  }
+  .pumpa-badge-overlay {
+    width: 44px;
+    height: 44px;
+    bottom: -6px;
+    right: -6px;
+  }
+
+  .coach-info-block {
+    padding-top: 0;
+    text-align: center;
+  }
+  .coach-role-tag {
+    font-size: 0.72rem;
+    padding: 0.25rem 0.85rem;
+  }
+  .coach-name-big {
+    font-size: 1.45rem;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+    word-break: break-word;
+  }
+
+  .coach-creds-list {
+    text-align: left;
+    background: #f8fafc;
+    padding: 1rem 1.1rem;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    gap: 0.65rem;
+  }
+  .coach-creds-list li {
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+  .cred-icon {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+  }
+
   .cta-title { font-size: 2rem; }
   .section-title { font-size: 2rem; }
   .about-stats-ribbon { padding: 1.5rem; }
   .locations-bar { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .coach-card-row {
+    padding: 1.25rem 0.9rem;
+  }
+  .coach-photo-wrap {
+    width: 150px;
+  }
+  .coach-photo-ring {
+    width: 150px;
+    height: 150px;
+  }
+  .coach-name-big {
+    font-size: 1.3rem;
+  }
+  .coach-creds-list {
+    padding: 0.85rem 0.9rem;
+  }
+  .coach-creds-list li {
+    font-size: 0.84rem;
+  }
 }
