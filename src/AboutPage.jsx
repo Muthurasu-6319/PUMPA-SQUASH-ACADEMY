@@ -68,11 +68,11 @@ const pushppaCredentials = [
 ];
 
 const yogesCredentials = [
-  'Co-Founder and Head Coach of Pumpa Squash Academy with over 22 years of coaching experience in squash.',
-  'As a former high-level player who competed in Malaysia Games (SUKMA), he brings valuable competitive experience and knowledge to his coaching journey.',
-  'WSF Certified Coach, he specialises in grassroots development programs and has developed numerous junior top 8 ranked players as well as social and recreational players.',
-  'He was also appointed as the State Coach for Junior High Performance by Majlis Sukan Negeri Selangor in the year 2013.',
-  'He is passionate about nurturing young athletes through professional coaching, discipline, and mentorship while creating a positive environment for players to grow both on and off the court.',
+  'Head Coach & Co-Founder (22+ Years Coaching Experience)',
+  'Former High-Level Competitor in Malaysia Games (SUKMA)',
+  'WSF Certified Coach & Grassroots Development Specialist',
+  'Appointed Selangor State Coach for Junior High Performance (2013)',
+  'Mentored & Developed Numerous Junior Top 8 Ranked Players',
 ];
 
 const values = ['Passion', 'Respect', 'Integrity', 'Teamwork', 'Discipline', 'Excellence', 'Fun'];
