@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { 
-  Trophy, 
-  Globe, 
-  UserCheck, 
-  Users, 
-  Heart, 
+import {
+  Trophy,
+  Globe,
+  UserCheck,
+  Users,
+  Heart,
   TrendingUp,
   Calendar,
   PlayCircle,
@@ -30,10 +30,10 @@ function HomePage() {
 
   return (
     <>
-      <SEO 
-        title="Pumpa Squash Academy | Top Squash Coaching in Selangor & KL" 
-        description="Join Pumpa Squash Academy in Selangor & Kuala Lumpur, Malaysia. We offer world-class squash coaching for juniors, adults, and competitive players." 
-        keywords="Squash Academy Selangor, Squash Coaching Kuala Lumpur, Learn Squash Malaysia, Pumpa Squash Academy, Junior Squash Training KL, Adult Squash Lessons Selangor, Squash court Malaysia" 
+      <SEO
+        title="Pumpa Squash Academy | Top Squash Coaching in Selangor & KL"
+        description="Join Pumpa Squash Academy in Selangor & Kuala Lumpur, Malaysia. We offer world-class squash coaching for juniors, adults, and competitive players."
+        keywords="Squash Academy Selangor, Squash Coaching Kuala Lumpur, Learn Squash Malaysia, Pumpa Squash Academy, Junior Squash Training KL, Adult Squash Lessons Selangor, Squash court Malaysia"
       />
       <div className="hero-section">
         {/* Navbar */}
@@ -77,17 +77,17 @@ function HomePage() {
             <span className="highlight">CHAMPIONS</span> <br />
             BEGIN
           </h1>
-          
+
           <p className="hero-description">
-            Develop Skills. Build Character. Achieve Greatness.<br/>
-            Professional squash coaching for juniors and adults.<br/>
+            Develop Skills. Build Character. Achieve Greatness.<br />
+            Professional squash coaching for juniors and adults.<br />
             Led by former Malaysian national player, former World No. 68, and WSF Level 3 Certified Coach Pushppa Devi, helping players build confidence, skills, and a lifelong love for squash.
           </p>
 
           <div className="coach-info">
-            <div className="coach-name">Led by Coach Pushppa Devi</div>
+            <div className="coach-name">Led by Coach Pushppa Devi and Yogeswaran</div>
             <div className="coach-credentials">
-              Former Malaysian National Player,<br/>
+              Former Malaysian National Player,<br />
               Former World No. 68 & WSF Level 3 Certified Coach
             </div>
           </div>
@@ -114,7 +114,7 @@ function HomePage() {
                 <span className="stat-label">PLAYERS COACHED</span>
               </div>
             </div>
-            
+
             <div className="stat-item">
               <Trophy className="stat-icon" size={32} strokeWidth={1.5} />
               <div className="stat-text">
@@ -122,7 +122,7 @@ function HomePage() {
                 <span className="stat-label">COACHING EXPERIENCE</span>
               </div>
             </div>
-            
+
             <div className="stat-item">
               <Globe className="stat-icon" size={32} strokeWidth={1.5} />
               <div className="stat-text">
@@ -130,7 +130,7 @@ function HomePage() {
                 <span className="stat-label">MALAYSIAN WORLD NO. 68</span>
               </div>
             </div>
-            
+
             <div className="stat-item">
               <UserCheck className="stat-icon" size={32} strokeWidth={1.5} />
               <div className="stat-text">
@@ -138,7 +138,7 @@ function HomePage() {
                 <span className="stat-label">COACH</span>
               </div>
             </div>
-            
+
             <div className="stat-item">
               <Award className="stat-icon" size={32} strokeWidth={1.5} />
               <div className="stat-text">

@@ -118,7 +118,7 @@ const CoachSection = () => {
         </div>
 
         {/* Co-Founder / Yogeswaran Section */}
-        <div className="coach-top-split" style={{ flexDirection: 'row-reverse', marginTop: '2rem' }}>
+        <div className="coach-top-split reverse" style={{ marginTop: '2rem' }}>
           <div className="coach-img-left">
             <img src={yogeswaranImg} alt="Coach Yogeswaran" className="img-fluid" />
             <div className="img-overlay-box">

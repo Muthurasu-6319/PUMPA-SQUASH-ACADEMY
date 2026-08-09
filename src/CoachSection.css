@@ -23,6 +23,10 @@
   position: relative;
 }
 
+.coach-top-split.reverse {
+  flex-direction: row-reverse;
+}
+
 .coach-img-left {
   flex: 1;
   position: relative;
@@ -389,7 +393,8 @@
 
 /* Mobile Responsive */
 @media (max-width: 1024px) {
-  .coach-top-split {
+  .coach-top-split,
+  .coach-top-split.reverse {
     flex-direction: column;
   }
   .coach-img-left {
