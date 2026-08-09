@@ -41,23 +41,23 @@ const Footer = () => {
         <div className="footer-links-col">
           <h4 className="footer-col-title">Quick Links</h4>
           <ul className="footer-links">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About Us</Link></li>
-            <li><Link to="/programs">Programs</Link></li>
-            <li><Link to="/gallery">Gallery</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-            <li><Link to="/booking">Book Free Trial</Link></li>
+            <li><Link to="/" onClick={() => window.scrollTo(0, 0)}>Home</Link></li>
+            <li><Link to="/about" onClick={() => window.scrollTo(0, 0)}>About Us</Link></li>
+            <li><Link to="/programs" onClick={() => window.scrollTo(0, 0)}>Programs</Link></li>
+            <li><Link to="/gallery" onClick={() => window.scrollTo(0, 0)}>Gallery</Link></li>
+            <li><Link to="/contact" onClick={() => window.scrollTo(0, 0)}>Contact</Link></li>
+            <li><Link to="/booking" onClick={() => window.scrollTo(0, 0)}>Book Free Trial</Link></li>
           </ul>
         </div>
 
         <div className="footer-links-col">
           <h4 className="footer-col-title">Programs</h4>
           <ul className="footer-links">
-            <li><Link to="/programs">Junior Development</Link></li>
-            <li><Link to="/programs">Advanced Training</Link></li>
-            <li><Link to="/programs">Adult Coaching</Link></li>
-            <li><Link to="/programs">Competitive Prep</Link></li>
-            <li><Link to="/programs">Holiday Camps</Link></li>
+            <li><Link to="/programs" onClick={() => window.scrollTo(0, 0)}>Junior Development</Link></li>
+            <li><Link to="/programs" onClick={() => window.scrollTo(0, 0)}>Advanced Training</Link></li>
+            <li><Link to="/programs" onClick={() => window.scrollTo(0, 0)}>Adult Coaching</Link></li>
+            <li><Link to="/programs" onClick={() => window.scrollTo(0, 0)}>Competitive Prep</Link></li>
+            <li><Link to="/programs" onClick={() => window.scrollTo(0, 0)}>Holiday Camps</Link></li>
           </ul>
         </div>
 
@@ -78,7 +78,7 @@ const Footer = () => {
             </li>
             <li>
               <Globe size={15} className="footer-contact-icon" />
-              <a href="https://www.pumpasquashacademy.com" target="_blank" rel="noopener noreferrer">www.pumpasquashacademy.com</a>
+              <a href="https://pumpa-squash-academy.vercel.app" target="_blank" rel="noopener noreferrer">www.pumpasquashacademy.com</a>
             </li>
           </ul>
         </div>

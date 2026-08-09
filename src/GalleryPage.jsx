@@ -8,6 +8,7 @@ import Footer from './Footer';
 import './GalleryPage.css';
 
 const logo = "https://pumpa-4fcm.onrender.com/assets/mylogos-BV6WDaXh.png";
+import SEO from './components/SEO';
 
 // Dynamically load all 31 images from assets/Gallery
 const imageModules = import.meta.glob('./assets/Gallery/*.{jpg,JPG,png,PNG}', { eager: true });
@@ -28,6 +29,11 @@ const galleryImagesList = Object.entries(imageModules).map(([path, mod], index) 
   } else {
     category = 'Academy Life';
     title = `Academy Life #${index + 1}`;
+  }
+
+  if (index === 29) {
+    category = 'Coaching';
+    title = 'Adult Coaching #30';
   }
 
   return {
@@ -96,6 +102,11 @@ export default function GalleryPage() {
 
   return (
     <>
+      <SEO
+        title="Gallery | Pumpa Squash Academy Malaysia"
+        description="View our squash academy in action! See our facilities, students, and coaches across Selangor and Kuala Lumpur."
+        keywords="Pumpa Squash Academy Gallery, Squash Coaching Photos, Squash Academy Facilities Malaysia, Squash KL Images, Selangor Squash Photos"
+      />
       {/* ── NAVBAR ── */}
       <nav className="gallery-navbar">
         <div className="logo-container" onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
@@ -131,7 +142,7 @@ export default function GalleryPage() {
       <section className="gallery-hero" ref={heroRef}>
         <div className={`gallery-hero-content ${heroIn ? 'animate-in' : ''}`}>
           <div className="gallery-hero-badge">
-            <Sparkles size={16} /> PHOTO GALLERY
+            PHOTO GALLERY
           </div>
           <h1 className="gallery-hero-title">
             MOMENTS OF <span className="green">GLORY</span>,<br />

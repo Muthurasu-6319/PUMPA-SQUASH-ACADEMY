@@ -108,6 +108,10 @@
   margin-bottom: 0.5rem;
 }
 
+.card-subtitle {
+  justify-content: center;
+}
+
 .line {
   flex: 1;
   height: 1px;

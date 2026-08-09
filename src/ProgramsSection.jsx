@@ -6,7 +6,7 @@ import './ProgramsSection.css';
 import progImg1 from './assets/Gallery/DSC_0049.JPG';
 import progImg2 from './assets/Gallery/DSC_0051.JPG';
 import progImg3 from './assets/Gallery/DSC_0054.JPG';
-import progImg4 from './assets/Gallery/DSC_0070.JPG';
+import progImg4 from './assets/Gallery/DSC_1055.JPG';
 import progImg5 from './assets/Gallery/DSC_0107.JPG';
 
 const ProgramsSection = () => {

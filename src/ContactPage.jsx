@@ -11,6 +11,7 @@ import imgHero from './assets/Gallery/DSC_0145.JPG';
 import imgCta from './assets/Gallery/DSC_0548.JPG';
 
 const logo = "https://pumpa-4fcm.onrender.com/assets/mylogos-BV6WDaXh.png";
+import SEO from './components/SEO';
 
 function useInView(options = {}) {
   const ref = useRef(null);
@@ -83,6 +84,11 @@ export default function ContactPage() {
 
   return (
     <>
+      <SEO 
+        title="Contact Us | Pumpa Squash Academy Selangor & KL" 
+        description="Get in touch with Pumpa Squash Academy. Call us, WhatsApp us, or drop an email to start your squash journey in Malaysia today." 
+        keywords="Contact Pumpa Squash Academy, Squash Coaching Selangor Contact, Squash Academy KL Phone, Learn Squash Malaysia Contact" 
+      />
       {/* ── NAVBAR ── */}
       <nav className="contact-navbar">
         <div className="logo-container" onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
@@ -274,7 +280,7 @@ export default function ContactPage() {
           </div>
         </a>
         <div className="qc-divider" />
-        <a href="https://www.pumpasquashacademy.com" target="_blank" rel="noopener noreferrer" className="qc-item" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <a href="https://pumpa-squash-academy.vercel.app" target="_blank" rel="noopener noreferrer" className="qc-item" style={{ textDecoration: 'none', color: 'inherit' }}>
           <div className="qc-icon web"><Globe size={26} /></div>
           <div>
             <h4 className="qc-title">VISIT OUR WEBSITE</h4>

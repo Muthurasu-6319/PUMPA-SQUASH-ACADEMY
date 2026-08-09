@@ -20,6 +20,8 @@ import TestimonialsSection from './TestimonialsSection';
 import ExperienceSection from './ExperienceSection';
 import Footer from './Footer';
 
+import SEO from './components/SEO';
+
 const logo = "https://pumpa-4fcm.onrender.com/assets/mylogos-BV6WDaXh.png";
 
 function HomePage() {
@@ -28,6 +30,11 @@ function HomePage() {
 
   return (
     <>
+      <SEO 
+        title="Pumpa Squash Academy | Top Squash Coaching in Selangor & KL" 
+        description="Join Pumpa Squash Academy in Selangor & Kuala Lumpur, Malaysia. We offer world-class squash coaching for juniors, adults, and competitive players." 
+        keywords="Squash Academy Selangor, Squash Coaching Kuala Lumpur, Learn Squash Malaysia, Pumpa Squash Academy, Junior Squash Training KL, Adult Squash Lessons Selangor, Squash court Malaysia" 
+      />
       <div className="hero-section">
         {/* Navbar */}
         <nav className="navbar">
@@ -90,7 +97,7 @@ function HomePage() {
               <Calendar size={18} />
               BOOK A FREE TRIAL
             </button>
-            <button className="btn-secondary">
+            <button className="btn-secondary" onClick={() => navigate('/programs')}>
               <PlayCircle size={18} />
               VIEW PROGRAMS
             </button>

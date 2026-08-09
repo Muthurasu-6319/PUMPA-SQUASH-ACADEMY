@@ -4,6 +4,7 @@ import {
   CheckCircle, ArrowRight, MapPin, Gift, Phone, Mail, User, Clock, MessageSquare
 } from 'lucide-react';
 import './BookingPage.css';
+import SEO from './components/SEO';
 
 const BookingPage = () => {
   const handleSubmit = (e) => {
@@ -29,7 +30,13 @@ const BookingPage = () => {
   };
 
   return (
-    <div className="booking-page">
+    <>
+      <SEO 
+        title="Book a Free Trial | Pumpa Squash Academy Selangor" 
+        description="Book your free squash trial with Pumpa Squash Academy in Selangor or KL. Discover world-class coaching for juniors and adults." 
+        keywords="Book Squash Trial Malaysia, Squash Lesson Booking Selangor, Free Squash Class KL" 
+      />
+      <div className="booking-page">
       {/* Header Banner */}
       <div className="booking-header">
         <div className="booking-header-content">
@@ -276,6 +283,7 @@ const BookingPage = () => {
       </div>
 
     </div>
+    </>
   );
 };
 

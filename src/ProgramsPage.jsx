@@ -12,7 +12,7 @@ import './ProgramsPage.css';
 import img1 from './assets/Gallery/DSC_0049.JPG';
 import img2 from './assets/Gallery/DSC_0051.JPG';
 import img3 from './assets/Gallery/DSC_0054.JPG';
-import img4 from './assets/Gallery/DSC_0070.JPG';
+import img4 from './assets/Gallery/DSC_1055.JPG';
 import img5 from './assets/Gallery/DSC_0107.JPG';
 import img6 from './assets/Gallery/DSC_0145.JPG';
 import img7 from './assets/Gallery/DSC_0150.JPG';
@@ -165,6 +165,8 @@ const FAQS = [
   { q: 'How often are the sessions?', a: 'Most programs run 2–3 times per week. Private sessions can be scheduled at your convenience based on coach availability.' },
 ];
 
+import SEO from './components/SEO';
+
 export default function ProgramsPage() {
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -183,6 +185,12 @@ export default function ProgramsPage() {
 
   return (
     <>
+      <SEO 
+        title="Squash Programs | Pumpa Squash Academy Malaysia" 
+        description="Explore our squash coaching programs in Selangor & KL for all ages. Junior development, adult coaching, competitive prep, and high-performance training." 
+        keywords="Squash Programs Malaysia, Junior Squash Coaching Selangor, Adult Squash Training KL, Squash competitive prep Malaysia, Squash lessons for beginners" 
+      />
+
       {/* ── NAVBAR ── */}
       <nav className="pp-navbar">
         <div className="logo-container" onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
@@ -440,7 +448,7 @@ export default function ProgramsPage() {
           <div className="pp-why-right">
             <img src={pushppaImg} alt="Coach Pushppa Devi – Former Malaysian National Player, World No. 68, WSF Level 3 Certified Coach" className="pp-coach-img" />
             <div className="pp-coach-info-card">
-              <div className="pp-coach-name">Pushppa Devi Paramasewa</div>
+              <div className="pp-coach-name">Pushppa Devi</div>
               <div className="pp-coach-creds">
                 <div><CheckCircle2 size={14} className="pp-cc-icon" /> Former Malaysian National Player</div>
                 <div><CheckCircle2 size={14} className="pp-cc-icon" /> Former World No. 68</div>

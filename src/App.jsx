@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import HomePage from './HomePage';
 import BookingPage from './BookingPage';
 import AboutPage from './AboutPage';
@@ -20,7 +20,7 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -31,7 +31,7 @@ function App() {
         <Route path="/gallery" element={<GalleryPage />} />
       </Routes>
       <FloatingWhatsApp />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

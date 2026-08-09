@@ -20,6 +20,8 @@ import student4 from './assets/student4.png';
 import student5 from './assets/student5.png';
 import student6 from './assets/student6.png';
 
+import yogeswaranImg from './assets/Gallery/yogeswaran.jpeg';
+
 const logo = "https://pumpa-4fcm.onrender.com/assets/mylogos-BV6WDaXh.png";
 
 const CoachSection = () => {
@@ -59,8 +61,7 @@ const CoachSection = () => {
                 </div>
 
                 <h2 className="coach-title">
-                  PUSHPPA DEVI<br />
-                  <span className="highlight-green">PARAMASEWA</span>
+                  PUSHPPA DEVI
                 </h2>
 
                 <ul className="coach-bullets">
@@ -110,6 +111,60 @@ const CoachSection = () => {
                 <div className="strip-text">
                   <span className="strip-value">AWARD</span>
                   <span className="strip-label">WINNING<br />ACADEMY</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Co-Founder / Yogeswaran Section */}
+        <div className="coach-top-split" style={{ flexDirection: 'row-reverse', marginTop: '2rem' }}>
+          <div className="coach-img-left">
+            <img src={yogeswaranImg} alt="Coach Yogeswaran" className="img-fluid" />
+            <div className="img-overlay-box">
+              <div className="logo-small">
+                <img src={logo} alt="Pumpa Squash Academy Logo" className="logo-img" style={{ height: '24px' }} />
+                <div className="logo-text-small">
+                  PUMPA
+                  <span className="sub">SQUASH ACADEMY</span>
+                </div>
+              </div>
+              <div className="overlay-text">
+                DEVELOPING<br />
+                <span className="highlight-green">CHAMPIONS</span><br />
+                FOR TOMORROW
+              </div>
+            </div>
+          </div>
+
+          <div className="coach-right-container">
+            <div className="coach-details-right">
+              <div className="coach-text-content" style={{ width: '100%' }}>
+                <div className="section-subtitle">
+                  <span className="line"></span>
+                  MEET YOUR COACH
+                  <span className="line"></span>
+                </div>
+
+                <h2 className="coach-title" style={{ fontSize: '2.5rem' }}>
+                  YOGESWARAN PARAMASEWA
+                </h2>
+
+                <ul className="coach-bullets">
+                  <li><Award className="bullet-icon" size={18} /> Head Coach & Co-Founder (22+ Years Coaching Experience)</li>
+                  <li><Globe className="bullet-icon" size={18} /> Former High-Level Competitor in Malaysia Games (SUKMA)</li>
+                  <li><CheckCircle2 className="bullet-icon" size={18} /> WSF Certified Coach & Grassroots Development Specialist</li>
+                  <li><Star className="bullet-icon" size={18} /> Appointed Selangor State Coach for Junior High Performance (2013)</li>
+                  <li><Star className="bullet-icon" size={18} /> Mentored & Developed Numerous Junior Top 8 Ranked Players</li>
+                </ul>
+
+                <div className="quote-box">
+                  <Quote className="quote-icon start" size={24} />
+                  <p>
+                    Squash is more than just a game; it's a character builder. I am passionate about guiding players to discover their strength and overcome challenges, ensuring they succeed both inside the court and in life.
+                  </p>
+                  <Quote className="quote-icon end" size={24} />
+                  <div className="quote-signature">Yogeswaran Paramasewa</div>
                 </div>
               </div>
             </div>

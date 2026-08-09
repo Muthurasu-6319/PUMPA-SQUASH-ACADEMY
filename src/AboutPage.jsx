@@ -77,6 +77,8 @@ const yogesCredentials = [
 
 const values = ['Passion', 'Respect', 'Integrity', 'Teamwork', 'Discipline', 'Excellence', 'Fun'];
 
+import SEO from './components/SEO';
+
 export default function AboutPage() {
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -90,6 +92,11 @@ export default function AboutPage() {
 
   return (
     <>
+      <SEO 
+        title="About Us | Pumpa Squash Academy Malaysia" 
+        description="Learn about Pumpa Squash Academy, led by former World No. 68 Pushppa Devi & Coach Yogeswaran. Developing champions in Selangor and Kuala Lumpur." 
+        keywords="About Pumpa Squash Academy, Squash Coaches Malaysia, Pushppa Devi Squash, Yogeswaran Squash Coach, Squash Academy Selangor, Squash Academy KL" 
+      />
       {/* ── HERO – matches HomePage style ── */}
       <div className="about-hero-section">
         {/* Navbar inside hero-section like HomePage */}
@@ -144,7 +151,7 @@ export default function AboutPage() {
             <p className="about-hero-cursive">Start Here... Shine Everywhere</p>
             
             <p className="about-hero-desc-new">
-              Founded by former Malaysian National Player &amp; World No. 68 Pushppa Devi Paramasewa,<br />
+              Founded by former Malaysian National Player & World No. 68 Pushppa Devi,<br />
               Pumpa Squash Academy empowers players of all ages through structured training,<br />
               world-class mentorship, and a supportive squash community.
             </p>
@@ -293,7 +300,7 @@ export default function AboutPage() {
           </div>
           <div className="coach-info-block">
             <span className="coach-role-tag">FOUNDER</span>
-            <h3 className="coach-name-big">PUSHPPA DEVI PARAMASEWA</h3>
+            <h3 className="coach-name-big">PUSHPPA DEVI</h3>
             <ul className="coach-creds-list">
               {pushppaCredentials.map((c, i) => (
                 <li key={i}><CheckCircle2 size={18} className="cred-icon" />{c}</li>
