@@ -92,10 +92,10 @@ export default function AboutPage() {
 
   return (
     <>
-      <SEO 
-        title="About Us | Pumpa Squash Academy Malaysia" 
-        description="Learn about Pumpa Squash Academy, led by former World No. 68 Pushppa Devi & Coach Yogeswaran. Developing champions in Selangor and Kuala Lumpur." 
-        keywords="About Pumpa Squash Academy, Squash Coaches Malaysia, Pushppa Devi Squash, Yogeswaran Squash Coach, Squash Academy Selangor, Squash Academy KL" 
+      <SEO
+        title="About Us | Pumpa Squash Academy Malaysia"
+        description="Learn about Pumpa Squash Academy, lead by former World No. 68 Pushppa Devi & Coach Yogeswaran. Developing champions in Selangor and Kuala Lumpur."
+        keywords="About Pumpa Squash Academy, Squash Coaches Malaysia, Pushppa Devi Squash, Yogeswaran Squash Coach, Squash Academy Selangor, Squash Academy KL"
       />
       {/* ── HERO – matches HomePage style ── */}
       <div className="about-hero-section">
@@ -142,14 +142,14 @@ export default function AboutPage() {
               <span className="badge-live-pulse"></span>
               <Award size={16} /> ABOUT PUMPA SQUASH ACADEMY
             </div>
-            
+
             <h1 className="about-hero-title-new">
               WHERE <span className="about-highlight">PASSION</span> MEETS <br />
               <span className="about-highlight">EXCELLENCE</span> ON COURT
             </h1>
-            
+
             <p className="about-hero-cursive">Start Here... Shine Everywhere</p>
-            
+
             <p className="about-hero-desc-new">
               Founded by former Malaysian National Player & World No. 68 Pushppa Devi,<br />
               Pumpa Squash Academy empowers players of all ages through structured training,<br />
@@ -163,7 +163,7 @@ export default function AboutPage() {
             </div>
 
             <div className="about-coach-info">
-              <div className="about-coach-name">Led by Coach Pushppa Devi &amp; Coach Yogeswaran</div>
+              <div className="about-coach-name">Lead by Coach Pushppa Devi Paramasewa &amp; Yogeswaran Paramasewa</div>
               <div className="about-coach-credentials">
                 Former World No. 68 • WSF Certified Level 3 • SUKMA State Coach
               </div>
@@ -191,7 +191,7 @@ export default function AboutPage() {
                   <span className="badge-dot"></span> WSF Level 3 Certified Academy
                 </div>
               </div>
-              
+
               <div className="about-hero-floating-card top-right">
                 <img src={yogeswaranImg} alt="Coach Yogeswaran" className="mini-coach-thumb" />
                 <div>

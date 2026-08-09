@@ -84,10 +84,10 @@ export default function ContactPage() {
 
   return (
     <>
-      <SEO 
-        title="Contact Us | Pumpa Squash Academy Selangor & KL" 
-        description="Get in touch with Pumpa Squash Academy. Call us, WhatsApp us, or drop an email to start your squash journey in Malaysia today." 
-        keywords="Contact Pumpa Squash Academy, Squash Coaching Selangor Contact, Squash Academy KL Phone, Learn Squash Malaysia Contact" 
+      <SEO
+        title="Contact Us | Pumpa Squash Academy Selangor & KL"
+        description="Get in touch with Pumpa Squash Academy. Call us, WhatsApp us, or drop an email to start your squash journey in Malaysia today."
+        keywords="Contact Pumpa Squash Academy, Squash Coaching Selangor Contact, Squash Academy KL Phone, Learn Squash Malaysia Contact"
       />
       {/* ── NAVBAR ── */}
       <nav className="contact-navbar">

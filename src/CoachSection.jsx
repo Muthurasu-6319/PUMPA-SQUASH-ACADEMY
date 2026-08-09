@@ -60,9 +60,9 @@ const CoachSection = () => {
                   <span className="line"></span>
                 </div>
 
-                <h2 className="coach-title">
-                  PUSHPPA DEVI
-                </h2>
+                <h3 className="coach-title" style={{ fontSize: '1.5rem' }}>
+                  PUSHPPA DEVI PARAMASEWA
+                </h3>
 
                 <ul className="coach-bullets">
                   <li><Award className="bullet-icon" size={18} /> Former Malaysian National Player</li>
@@ -146,9 +146,9 @@ const CoachSection = () => {
                   <span className="line"></span>
                 </div>
 
-                <h2 className="coach-title" style={{ fontSize: '2.5rem' }}>
+                <h3 className="coach-title" style={{ fontSize: '1.5rem' }}>
                   YOGESWARAN PARAMASEWA
-                </h2>
+                </h3>
 
                 <ul className="coach-bullets">
                   <li><Award className="bullet-icon" size={18} /> Head Coach & Co-Founder (22+ Years Coaching Experience)</li>

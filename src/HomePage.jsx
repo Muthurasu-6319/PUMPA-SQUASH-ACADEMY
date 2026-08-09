@@ -81,11 +81,11 @@ function HomePage() {
           <p className="hero-description">
             Develop Skills. Build Character. Achieve Greatness.<br />
             Professional squash coaching for juniors and adults.<br />
-            Led by former Malaysian national player, former World No. 68, and WSF Level 3 Certified Coach Pushppa Devi, helping players build confidence, skills, and a lifelong love for squash.
+            Lead by former Malaysian national player, former World No. 68, and WSF Level 3 Certified Coach Pushppa Devi, helping players build confidence, skills, and a lifelong love for squash.
           </p>
 
           <div className="coach-info">
-            <div className="coach-name">Led by Coach Pushppa Devi and Yogeswaran</div>
+            <div className="coach-name">Lead by Coach Pushppa Devi Paramasewa &amp; Yogeswaran Paramasewa</div>
             <div className="coach-credentials">
               Former Malaysian National Player,<br />
               Former World No. 68 & WSF Level 3 Certified Coach
