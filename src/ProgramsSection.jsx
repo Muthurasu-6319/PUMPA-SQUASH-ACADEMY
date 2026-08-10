@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { CheckCircle2, Calendar } from 'lucide-react';
 import './ProgramsSection.css';
 
-import progImg1 from './assets/Gallery/DSC_0049.JPG';
+import progImg1 from './assets/Gallery/WhatsApp Image 2026-08-10 at 4.28.56 PM.jpeg';
 import progImg2 from './assets/Gallery/DSC_0051.JPG';
 import progImg3 from './assets/Gallery/DSC_0054.JPG';
 import progImg4 from './assets/Gallery/DSC_1055.JPG';
@@ -19,6 +19,7 @@ const ProgramsSection = () => {
       bullets: ["Fun & Age-Appropriate Training", "Movement & Coordination", "Confidence & Social Skills"],
       color: "#eab308", // Yellow
       img: progImg1,
+      objectPosition: "50% 15%",
       iconSvg: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide-icon">
           <circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><circle cx="15" cy="7" r="4"/><path d="M12 21v-2a4 4 0 0 0-4-4H4a4 4 0 0 0-4 4v2"/>
@@ -105,7 +106,7 @@ const ProgramsSection = () => {
           {programs.map((prog, idx) => (
             <div className="program-card" key={idx} style={{ borderTopColor: prog.color }}>
               <div className="card-img-wrapper">
-                <img src={prog.img} alt={prog.title} />
+                <img src={prog.img} alt={prog.title} style={{ objectPosition: prog.objectPosition || 'top' }} />
                 <div className="card-icon" style={{ backgroundColor: prog.color === '#22c55e' ? prog.color : '#8cc63f' }}>
                   {prog.iconSvg}
                 </div>

@@ -50,7 +50,7 @@ ul {
       var(--dark-bg-transparent) 40%,
       rgba(13, 19, 31, 0.4) 100%
     ),
-    url('/home_banner.jpg');
+    url('./assets/Gallery/image.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
