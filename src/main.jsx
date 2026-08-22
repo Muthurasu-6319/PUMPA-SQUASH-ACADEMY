@@ -6,7 +6,7 @@ import LaunchScreen from './LaunchScreen.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <LaunchScreen targetDate={new Date(Date.now() + 60000).toISOString()}>
+    <LaunchScreen targetDate="2026-08-23T08:12:00+05:30">
       <App />
     </LaunchScreen>
   </StrictMode>,
