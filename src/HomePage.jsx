@@ -14,6 +14,7 @@ import {
 import { useNavigate } from 'react-router-dom';
 import './index.css';
 import CoachSection from './CoachSection';
+import StorySection from './StorySection';
 import ProgramsSection from './ProgramsSection';
 import WhyChooseSection from './WhyChooseSection';
 import TestimonialsSection from './TestimonialsSection';
@@ -150,6 +151,7 @@ function HomePage() {
         </div>
       </div>
       <CoachSection />
+      <StorySection />
       <ProgramsSection />
       <WhyChooseSection />
       <TestimonialsSection />

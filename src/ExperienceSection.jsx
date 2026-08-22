@@ -81,31 +81,6 @@ const ExperienceSection = () => {
           ))}
         </div>
 
-        {/* Video Story Strip */}
-        <div className="video-story-strip">
-          <div className="video-strip-left">
-            <div className="clapper-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 21H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2z"/><path d="M2 7h20"/><path d="M6 3v4"/><path d="M10 3v4"/><path d="M14 3v4"/><path d="M18 3v4"/><path d="M15 14l-5-3v6z"/></svg>
-            </div>
-            <div className="video-text">
-              <h4>WATCH OUR STORY</h4>
-              <p>See how we coach, inspire and bring out the best in every player.</p>
-            </div>
-          </div>
-          <div className="video-strip-right">
-            <div className="video-thumbnails">
-              <img src={thumb1} alt="Thumb 1" />
-              <img src={thumb2} alt="Thumb 2" />
-              <img src={thumb3} alt="Thumb 3" />
-              <img src={thumb4} alt="Thumb 4" />
-            </div>
-            <div className="play-button-overlay">
-              <div className="play-circle">
-                <Play fill="white" size={24} />
-              </div>
-            </div>
-          </div>
-        </div>
 
         <div className="exp-stats-strip">
           <div className="exp-stat-item">
